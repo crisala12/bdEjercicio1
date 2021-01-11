@@ -10,14 +10,35 @@ public class BdEjercicio1 {
 
    
     public static void main(String[] args) {
-       conexion cn = new conexion();
-        if (cn.conectar()!= null ) {
-            System.out.println("Conexion Existosa");
-            
+    //persnoa ps = new persnoa();
+    personabd bd= new personabd();
+        
+//       ps.setCedula("11060874");
+//       ps.setNombre("Soraya Veronica");
+//       ps.setApellido("Montaño Cabezas");
+//       ps.setDireccion("San Jose");
+//       ps.setCorreo("soyaracabe12@gmail.com");
+//       ps.setTelefono("098765554");
+//      
+//        if (bd.crearPersona(ps)) {
+//            System.out.println("Sus datos se guardo exitosamente"); 
+//        }else{
+//            System.out.println("NO se guardo sus datos");
+//        }
+        if (bd.eliminarpersona(2)) {
+            System.out.println("El Dato se elimino correctamente");
             
         }else{
-            System.out.println("Conexio Fallida");
+            System.out.println("El dato no se elimino");
         }
+//  if (bd.actualizarPersona(ps, 2)) {
+//            System.out.println("El dato se actualizo correctamente");
+//            
+//        }else{
+//            System.out.println("El dato no se actualizo");
+//        }
+//    }
+//    
     }
     
-}
+    }
